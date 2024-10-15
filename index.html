@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8fc9f5f48d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Engineer</p>
+                <h1>Hi, I'm <span>Aditya </span><br>Routh From Siliguri</h1>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------- about------------------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> <h3> CSE Student | Tech & Design Enthusiast | Cinematography & Programming Aficionado </h3>
+                        <br>
+                        I'm a second-year Computer Science Engineering student interested in object design, cinematics video editing, and coding. All of these languages I have taught myself, and more importantly, it really brings me much enjoyment to use technology and creativity, bringing an idea to life. Always looking to team up, learn, and innovate about technology and design. Let's connect then, just in case of creative projects or technology-driven discussions!</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/Web apps</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Internship Ardent Kolkata </li>
+                            <li><span>2022 - 2023</span><br>Technical Member of Camio Group</li>
+                            <li><span>2020 - 2021</span><br>Director of Photography (TMMF).</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br> Ardent (Web Design)</li>
+                            <li><span>2023</span><br>Persuring  B.Tech in CSE (GMIT)</li>
+                            <li><span>2022</span><br>Schooling (MCCS)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div class="service-item">
+
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>I’m a web designer with frontend expertise, some backend skills, and a portfolio of projects and certifications that reflect my passion for blending creativity with code.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div class="service-item">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>I’m a UX/UI designer skilled in Figma, Canva, and various AI tools, with a portfolio of projects that showcase my ability to create user-friendly and visually striking designs.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div class="service-item">
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>I have some experience in app development using Android Studio, though I'm still refining my skills. While I’ve encountered challenges along the way, I’m steadily working to improve and troubleshoot effectively.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------Portfolio------------------- -->
+        <div id="Portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Portfolio</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Netlix Clone Website</h3>
+                            <p>I created a Netflix clone frontend, replicating its design and responsive UI for a seamless user experience.</p>
+                            <a href="https://github.com/adiiiii13/Netflix_Clone_Only-HTML-CSS.git"><i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Amazon Website</h3>
+                            <p>I built an Amazon clone frontend, recreating its design and responsive interface for an intuitive user experience.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Model Shoot</h3>
+                            <p>I have experience as a Director of Photography (DoP) for model shoots, where I focused on capturing stunning visuals and enhancing the overall aesthetic of each project.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-xs "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!-- ---------------Contact-------------->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <hl class="sub-title">Contact Me</hl>
+                        <p><i class="fa-solid fa-envelope fa-xs"></i>aditya04slg@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/share/NfnYZsC6EUVP3tEz/"><i class="fab fa-facebook"></i></a>
+                            <a href="https://github.com/adiiiii13"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/adiiiii.?igsh=MTl1bnB5dnU0cnM0dQ=="><i class=" fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/aditya-routh-231716214/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/Aditya_Routh_RESUME.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; Aditya. Made it <i class="fa-solid fa-heart fa-xs"></i> by Aditya</p>
+            </div>
+        </div>
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (let tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (let tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+
+</body>
+
+</html>
