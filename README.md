@@ -1,4 +1,3 @@
-Here's a beautiful README file for your portfolio website:
 
 ---
 
